@@ -23,8 +23,7 @@ CREATE TABLE IF NOT EXISTS movimentacoes (
 );
 """
 
-# Guarda o identificador único do banco (FITID) para evitar duplicatas,
-# já que a descrição agora é digitada e não serve mais para comparar.
+
 SQL_ADD_FITID = """
 ALTER TABLE movimentacoes ADD COLUMN IF NOT EXISTS fitid VARCHAR(100);
 """
